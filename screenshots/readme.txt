@@ -1,0 +1,1 @@
+QuickSight dashboard screenshots 
