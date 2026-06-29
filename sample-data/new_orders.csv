@@ -1,0 +1,2 @@
+Row ID,Order ID,Order Date,Ship Date,Ship Mode,Customer ID,Customer Name,Segment,Country,City,State,Postal Code,Region,Product ID,Category,Sub-Category,Product Name,Sales,Quantity,Discount,Profit
+9995,TEST-2026-001,6/27/2026,6/28/2026,First Class,CG-12520,Test Customer,Consumer,United States,New York,New York,10001,East,TEC-PH-10004977,Technology,Phones,Test Phone,999.99,1,0,100.0
