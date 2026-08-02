@@ -133,7 +133,6 @@ It performs three main tasks:
      ```
    - The Crawler only stores metadata; it does not copy or move the actual data.
 
-### Data Flow
 
 Before Glue Crawler:
 Before Glue Crawler:
