@@ -104,6 +104,39 @@ Original dataset: [Kaggle Superstore Dataset](https://www.kaggle.com/datasets/vi
 - Bedrock Nova Lite requires cross-region inference profile in eu-west-1
 
 ---
+## Notes to understand why we use each service
+## AWS Glue Crawler
+
+The AWS Glue Crawler is responsible for discovering and cataloging the data stored in Amazon S3.
+
+It performs three main tasks:
+
+1. **Scans Parquet files in S3**
+   - Reads all files from:
+     ```
+     s3://sales-datalake-georgios/processed/
+     ```
+   - Extracts metadata from the data files.
+
+2. **Automatically detects the schema**
+   - Identifies column names and data types, for example:
+     ```
+     Order_ID    → String
+     Sales       → Double
+     Order_Date  → Date
+     ```
+
+3. **Creates tables in AWS Glue Data Catalog**
+   - Registers the discovered schema as tables inside:
+     ```
+     superstore_db
+     ```
+   - The Crawler only stores metadata; it does not copy or move the actual data.
+
+### Data Flow
+
+Before Glue Crawler:
+
 
 ## 👤 Author
 Georgios — Data Engineer
