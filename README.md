@@ -154,7 +154,15 @@ Athena (SQL Queries)
 
 
 Athena uses the Glue Catalog metadata to understand the structure of the Parquet files and
+### Delta Lake
+why we use Delta lake and we have the data as S3
+✅ Full history via _delta_log
+✅ Time Travel to any version
+✅ ACID transactions
 
+why pyspark for Delta Lake?
+Delta Lake only works with Spark - it is not supported by regular Python.
+As an example to see the time travel on the data I run spark Glue "delta_time_travel_demo"
 
 ## 👤 Author
 Georgios — Data Engineer
