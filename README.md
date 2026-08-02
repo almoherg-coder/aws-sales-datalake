@@ -136,6 +136,25 @@ It performs three main tasks:
 ### Data Flow
 
 Before Glue Crawler:
+Before Glue Crawler:
+
+
+S3 (Parquet Files) → Athena
+
+
+Athena cannot query the data because it does not know the table structure.
+
+After Glue Crawler:
+
+
+S3 (Parquet Files)
+↓
+Glue Data Catalog (Schema Metadata)
+↓
+Athena (SQL Queries)
+
+
+Athena uses the Glue Catalog metadata to understand the structure of the Parquet files and
 
 
 ## 👤 Author
