@@ -86,7 +86,7 @@ aws-smart-sales-datalake/
 
 ## 📊 Dashboard Screenshots
 
-![Dashboard](screenshots/dashboard.png)
+https://github.com/almoherg-coder/aws-sales-datalake/tree/main/screenshots
 
 ---
 
